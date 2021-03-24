@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Shop_v_2</title>
+    <link href="~/css/vendors.css" rel="stylesheet" />
+    <link href="~/css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="landscape">
+        <div class="landscape_logo"></div>
+        <div class="landscape_text">Turn the device into portrait mode</div>
+        <div class="banana">
+            <img src="~/icon/Banana.gif" alt="Dancing Banana">
+        </div>
+    </div>
+    <nav class="menu">
+        <div class="logo">
+            <a href="@Url.Action("Index")"> <img src="~/icon/logo.png" alt="logo"></a>
+        </div>
+        <div class="menu__container">
+            <div class="links">
+                <div class="links__item menu_main"><a href="@Url.Action("Index")">Главная</a></div>
+            </div>
+            <div class="panel">
+                <div class="lang">
+                </div>
+                @{bool test = true;
+
+                    if (!User.Identity.IsAuthenticated)
+                    {
+                        <div class="logout">
+                            <div class="reg">
+                                <a href="@Url.Action("Reg")">
+                                    <div class="reg__ico"><img src="~/icon/_ionicons_svg_md-person-add.svg" alt=""></div>
+                                    <div class="reg__text">Регистрация</div>
+                                </a>
+                            </div>
+                            <div class="enter">
+                                <a href="@Url.Action("Reg")">
+                                    <div class="reg__ico"><img src="~/icon/_ionicons_svg_md-log-in.svg" alt=""></div>
+                                    <div class="reg__text">Логин</div>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {<p style="color:azure" class="links__item menu_main">
+
+                            <style>
+                                #navbar ul {
+                                    display: none;
+                                    position: absolute;
+                                    top: 100%;
+                                    right:auto;
+                                }
+
+                                #navbar li:hover ul {
+                                    display: block;
+                                }
+
+                                #navbar, #navbar ul {
+                                    margin: 0;
+                                    padding: 0;
+                                    list-style-type: none;
+                                }
+
+                                #navbar {
+                                    height: 30px;
+                                }
+
+                                    #navbar li {
+                                        float: left;
+                                        position: relative;
+                                        height: 100%;
+                                    }
+
+                                        #navbar li a {
+                                            display: block;
+                                            width: 100px;
+                                            color: #fff;
+                                            text-decoration: none;
+                                        }
+
+                                    #navbar ul li {
+                                        float: none;
+                                    }
+                            </style>
+                            <ul id="navbar">
+
+                                <li style="color:azure" class="links__item menu_main">
+                                    @User.Identity.Name
+                                    <ul>
+                                        <li>
+                                            <a href="">Профиль</a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Cart")">Корзина</a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Logout")">Выход</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </p>
+                    }
+                }
+
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#" class="mobile-menu__btn">
+                <span></span>
+            </a>
+        </div>
+    </nav>
+    @RenderBody()
+    <section class="footer">
+        <div class="footer__line"></div>
+        <div class="footer__menu">
+            <div class="links">
+                <div class="links__item menu_main"><a href="@Url.Action("Index")">Главная</a></div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            © 2018-2020 Все права защищены, QasMoke
+
+
+        </div>
+        <div class="footer__copyright">
+            Нахимовский просп., 21, Москва
+            +7 495 800-12-00, +7 499 317-04-09, +7 903 105-90-17, +7 495 792-83-02, +7 499 613-35-34, +7 985 975-52-61
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,209 @@
+﻿
+@model IEnumerable<Shop_v_2.Models.Products>
+
+@{
+    ViewData["Title"] = "Лучшее DLC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#4E00AD">
+    <meta name="theme-color" content="#4E00AD">
+    <meta name="google-site-verification" content="jNJ1VOXgGUqJz-z2d9CGzjeJdxLe6itBUdmpTeSxE3w">
+    <meta name="webmoney" content="BE9B4F31-EBCA-4754-898C-079396D0DEB8">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/Favicon/site.bin">
+    <link rel="mask-icon" href="~/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="~/Favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="QasMoke">
+    <meta property="og:site_name" content="QasMoke.me">
+</head>
+<body>
+    <section class="main mt container">
+        <section class="header">
+            <div class="header__item">
+                <div class="typed_logo">
+                    <h1 class="typed">QasMoke.ME</h1>
+                </div>
+                <div class="subtitle">
+                    QasMoke -  уникальный чит СНГ разработчиков, обладающий широким функционалом и легкой настройкой, а также быстрой и отзывчивой поддержкой.
+                </div>
+            </div>
+            <div class="header__item">
+                <div class="soc">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=6n3pFFPSlW4"><i class="fab fa-vk"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=6n3pFFPSlW4"><i class="fab fa-discord"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=6n3pFFPSlW4"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__items">
+                <div class="advantages__item">
+                    <div class="advantages__title">Продвинутый легит бот</div>
+                    <div class="advantages__text">В нашем легите вы можете найти все самые современные функции и настройки. Настроить аим можно быстро и легко.</div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__title">Удобные визуалы</div>
+                    <div class="advantages__text">Вы сможете полностью настроить визуалы по своему вкусу, у нас огромное количество опций, которые могут прийтись вам по душе.</div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__title">Удобная и разнообразная покупка</div>
+                    <div class="advantages__text">Прямо с нашего сайта вы можете мгновенно оплатить подписку, приостановить её и сбросить HWID.</div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider__wrapper owl-carousel">
+                    <div class="slider__item"><img src="~/icon/screem_1.png" alt=""></div>
+                    <div class="slider__item"><img src="~/icon/screen_2.png" alt=""></div>
+                    <div class="slider__item"><img src="~/icon/screen_3.png" alt=""></div>
+                </div>
+                <div class="slider__controls">
+                    <div class="left">
+                        <a href=""><img src="~/icon/_ionicons_svg_ios-arrow-round-back.svg" alt=""></a>
+                    </div>
+                    <div class="right">
+                        <a href=""><img src="~/icon/_ionicons_svg_ios-arrow-round-forward.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__items">
+                <div class="advantages__item">
+                    <div class="advantages__title">Responsive support</div>
+                    <div class="advantages__text">Есть какое-то интересное предложение? Сообщение о багах? Пишите нам!</div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__title">VAC bypass</div>
+                    <div class="advantages__text">Благодаря нашей технологии мутации шанс получить VAC близок к нулю. Новый чит генерируется каждую минуту.</div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__title">Отзывчевая техподдержка</div>
+                    <div class="advantages__text">Наша техподдержка всегда готова ответить на все ваши вопросы и выслушать все ваши жалобы</div>
+                </div>
+            </div>
+            <div class="advantages__btns">
+                <a href="#buy" class="advantages__btn">Купить</a>
+            </div>
+        </section>
+        <section class="functional">
+            <h2 class="title">Облачный радар</h2>
+            <div class="functional__items">
+                <div class="functional__item">
+                    <div class="functional__subtitle">Cloud radar</div>
+                    <div class="functional__separator"></div>
+                    <div class="functional__text">
+                        Есть друзья, которые еще не купили наш чит? Предоставьте им ссылку на клауд радар, который они смогут открыть на телефоне и видеть большинство перемещений противников.
+                    </div>
+                </div>
+                <div class="functional__item">
+                    <div class="functional__subtitle">Инвентарь Чейнджер</div>
+                    <div class="functional__separator"></div>
+                    <div class="functional__text">
+                        Добавляйте любые предметы в Ваш инвентарь и выбирайте любой из них прямо во время игры. Другие пользователи QasMoke также смогут увидеть выбранные вами скины!
+                    </div>
+                </div>
+                <div class="functional__item">
+                    <div class="functional__subtitle">Умный АимБот</div>
+                    <div class="functional__separator"></div>
+                    <div class="functional__text">
+                        Умный аимбот, который очень легко и быстро настраивается. Вам больше не обязательно указывать непонятные "фовы" и "смучи". Просто поставьте уровень "беспалевности".
+                    </div>
+                </div>
+                <div class="functional__item">
+                    <div class="functional__subtitle">Бинд клавиш</div>
+                    <div class="functional__separator"></div>
+                    <div class="functional__text">
+                        Абсолютно любую галочку в нашем чите можно включать и выключать с помощью кнопок на клавиатуре. Доступные действия: включить/выключить по единоразовому нажатию на клавишу, включить/выключить пока клавиша зажата.
+                    </div>
+                </div>
+                <div class="functional__item">
+                    <div class="functional__subtitle">Бэктрекинг</div>
+                    <div class="functional__separator"></div>
+                    <div class="functional__text">
+                        Вы можете попадать в противников, стреляя туда, где они были до 200 мс назад. Аимбот полностью совместим с данной функцией и при наведении будет учитываться откат во времени.
+                    </div>
+                </div>
+                <div class="functional__item">
+                    <div class="functional__subtitle">Лобби</div>
+                    <div class="functional__separator"></div>
+                    <div class="functional__text">
+                        Изменяйте ранги, спамьте ошибками, пишите в чат красным цветом и даже делайте так, чтобы у всех в лобби вылезло тысячу окон!
+                    </div>
+                </div>
+                <div class="functional__item">
+                    <div class="functional__subtitle">Миниигры</div>
+                    <div class="functional__separator"></div>
+                    <div class="functional__text">
+                        Небольшие игры, которые могут скоротать разминку или таймаут :)
+                    </div>
+                </div>
+                <div class="functional__item">
+                    <div class="functional__subtitle">Обход записи</div>
+                    <div class="functional__separator"></div>
+                    <div class="functional__text">
+                        Наш чит не виден на программах для записи и стриминга (например, OBS).
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="buy" id="buy">
+            <h2 class="title">Преобрести подписку</h2>
+            <div class="buy__items">
+                @foreach(var models in Model)
+                {
+                <div class="buy__item">
+                    <div class="day">@models.titile</div>
+                    <div class="cost">@models.price <span>USD</span></div>
+                    <div class="day" style="text-align:center; font-size:18px;">@models.description</div>
+                    <div class="btn">
+                       <!-- <a href="@Url.Action("Reg")">Купить</a> -->
+                        <a href="/Home/AddToCart?ID=@models.ID">Добавить в корзину</a>
+                    </div>
+                </div>
+                }
+
+            </div> 
+            <div class="buy__payment">
+                <div class="supported">Поддерживаемые системы оплаты:</div>
+                <div class="names">Bitcoin, WebMoney, Visa, MasterCard, PayPal, Qiwi, Yandex.Money.</div>
+                <div class="buy__logos">
+                    <div class="inner">
+                        <img src="~/icon/1.png" alt="">
+                    </div>
+                    <div class="inner">
+                        <img src="~/icon/2.png" alt="">
+                    </div>
+                    <div class="inner">
+                        <img src="~/icon/3.png" alt="">
+                    </div>
+                    <div class="inner">
+                        <img src="~/icon/4.png" alt="">
+                    </div>
+                    <div class="inner">
+                        <img src="~/icon/5.png" alt="">
+                    </div>
+                    <div class="inner">
+                        <img src="~/icon/6.png" alt="">
+                    </div>
+                    <div class="inner">
+                        <img src="~/icon/7.png" alt="">
+                    </div>
+                </div>
+                <div class="purchase">Автоматическое продление подписки.Загрузка станет доступной в вашем профиле</div>
+            </div>
+        </section>
+    </section>
+    <script type="18956174fc7229613484607a-text/javascript" src="~/js/vendors.js"></script>
+    <script type="18956174fc7229613484607a-text/javascript" src="~/js/app.js"></script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="18956174fc7229613484607a-|49" defer=""></script>
+</body>
+</html>
+

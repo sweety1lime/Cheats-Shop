@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Favicon\apple-touch-icon.png" />
+    <None Include="wwwroot\Favicon\favicon-16x16.png" />
+    <None Include="wwwroot\Favicon\favicon-32x32.png" />
+    <None Include="wwwroot\Favicon\favicon.ico" />
+    <None Include="wwwroot\Favicon\safari-pinned-tab.svg" />
+    <None Include="wwwroot\Favicon\site.bin" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-100.woff" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-100.woff2" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-300.woff" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-300.woff2" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-500.woff" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-500.woff2" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-700.woff" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-700.woff2" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-900.woff" />
+    <None Include="wwwroot\fonts\MuseoSansCyrl-900.woff2" />
+    <None Include="wwwroot\icon\1.png" />
+    <None Include="wwwroot\icon\2.png" />
+    <None Include="wwwroot\icon\3.png" />
+    <None Include="wwwroot\icon\4.png" />
+    <None Include="wwwroot\icon\5.png" />
+    <None Include="wwwroot\icon\6.png" />
+    <None Include="wwwroot\icon\7.png" />
+    <None Include="wwwroot\icon\Banana.gif" />
+    <None Include="wwwroot\icon\bg.png" />
+    <None Include="wwwroot\icon\logo.png" />
+    <None Include="wwwroot\icon\owl.video.play.png" />
+    <None Include="wwwroot\icon\rleft.png" />
+    <None Include="wwwroot\icon\rou_line.png" />
+    <None Include="wwwroot\icon\rright.png" />
+    <None Include="wwwroot\icon\screem_1.png" />
+    <None Include="wwwroot\icon\screen_2.png" />
+    <None Include="wwwroot\icon\screen_3.png" />
+    <None Include="wwwroot\icon\settings.svg" />
+    <None Include="wwwroot\icon\_ionicons_svg_ios-arrow-round-back.svg" />
+    <None Include="wwwroot\icon\_ionicons_svg_ios-arrow-round-forward.svg" />
+    <None Include="wwwroot\icon\_ionicons_svg_md-arrow-dropright-circle.svg" />
+    <None Include="wwwroot\icon\_ionicons_svg_md-log-in.svg" />
+    <None Include="wwwroot\icon\_ionicons_svg_md-person-add.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

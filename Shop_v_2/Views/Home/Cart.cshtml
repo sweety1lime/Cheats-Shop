@@ -1,0 +1,91 @@
+﻿@model Cart
+@{
+    ViewData["Title"] = "Лучшее DLC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#4E00AD">
+    <meta name="theme-color" content="#4E00AD">
+    <meta name="google-site-verification" content="jNJ1VOXgGUqJz-z2d9CGzjeJdxLe6itBUdmpTeSxE3w">
+    <meta name="webmoney" content="BE9B4F31-EBCA-4754-898C-079396D0DEB8">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/Favicon/site.bin">
+    <link rel="mask-icon" href="~/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="~/Favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="QasMoke">
+    <meta property="og:site_name" content="QasMoke.me">
+</head>
+<body>
+    <section class="main mt container">
+        <section class="header">
+            <div class="header__item">
+            </div>
+            <div class="header__item">
+                <div class="soc">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=6n3pFFPSlW4"><i class="fab fa-vk"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=6n3pFFPSlW4"><i class="fab fa-discord"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=6n3pFFPSlW4"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="links">
+        <div class="links__item menu_main">
+            @if (Model.CartLines.Count == 0)
+
+            {
+
+                <p class="links__item menu_main" style="color:azure">Товаров в корзине нет</p> <a class="links__item menu_main" style="color:azure" href="/">Назад к товарам</a>
+
+            }
+
+            else
+
+            {
+
+                @for (int i = 0; i < Model.CartLines.Count; i++)
+
+                {
+
+                    <ul class="links__item menu_main" style="color:azure">
+
+                        <li>
+                            <p>
+                                @Model.CartLines[i].titile - @Model.CartLines[i].description - @Model.CartLines[i].price
+                            </p>
+
+                            <a href="/Home/RemoveFromCart?Number= @i">
+                                Убрать из корзины
+                            </a>
+                        </li>
+                    </ul>
+
+
+                }
+
+
+
+                <a class="links__item menu_main"  href="~/Home/Order">
+                    Оформить заказ
+                </a>
+
+            }
+        </div>
+    </div>
+
+    <script type="18956174fc7229613484607a-text/javascript" src="~/js/vendors.js"></script>
+    <script type="18956174fc7229613484607a-text/javascript" src="~/js/app.js"></script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="18956174fc7229613484607a-|49" defer=""></script>
+</body>
+</html>
